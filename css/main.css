@@ -1,21 +1,22 @@
-/* WRAPPER */
 
-
-.wrapper {
-    margin: 0 auto;
-    width: 90%;
-}
-
-
-/* TEXT STYLING */
+/* BODY STYLING */
 
 body { 
     font: 1em avenir, sans-serif;
     background-color: #F7F7F9;
     color: #565364;
+    max-width: 375px;
+    margin: 0 auto;
+            box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+                        0 5px 15px 0 rgba(0,0,0,0.08);   
+    overflow: hidden;
 }
+
+
+/* TEXT STYLING */
+
 h1 {
-    font: 1.4em avenir, sans-serif;
+    font: 1.6em avenir, sans-serif;
     font-weight: 900;
     text-align: center;
 }
@@ -39,9 +40,12 @@ li {
     padding: 20px 0 20px 0;
 }
 .sun, .mon, .tue, .wed, .thu, .fri, .sat {
-    font-weight: 600;
+    font-weight: 400;
+    color: #BDBDBD;
 }
-
+a {
+    text-decoration: none;s
+}
 
 
 /* HEADER SETUP */
@@ -61,8 +65,8 @@ li {
 .menu {
     grid-column: 6;
     grid-row: 1;
-    text-align: center;
-    padding-top: 18px;
+    text-align: left;
+    padding-top: 22px;
 }
 
 
@@ -74,8 +78,16 @@ li {
     grid-auto-rows: auto;
     background-color: #fff;
     max-width: 100%;
-    padding: 40px;
+    padding: 0px 36px 36px 36px;
     margin: 0;
+}
+
+
+/* EVENT WRAPPER */
+
+.eventWrapper {
+    margin: 0 auto;
+    width: 85%;
 }
 
 
@@ -88,10 +100,14 @@ li {
 .event-item {
     padding: 10px 0px 10px 20px;
     background-color: #fff;
-    border: 1px solid #BDBDBD;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);    
     border-radius: 6px;
     margin-bottom: 24px;
+    transition: all .2s;
 }
+.event-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),
+    0 2px 4px 0 rgba(0,0,0,0.08);}
 
 
 /* BUTTON SETUP */
@@ -105,8 +121,13 @@ li {
     font: 1.2em avenir, sans-serif;
     background-color: #7467CF;
     width: 100%;
-    margin-top: 40px;
+    margin: 36px 0 48px 0;
     border-radius: 6px;
+    transition: all .2s;
+}
+
+.eventButton:hover {
+    background-color: rgb(136, 122, 230);
 }
 
 

@@ -12,75 +12,89 @@
   <body>
     <header id="date-and-menu"> 
       <h1 class="date">Tuesday, March 15</h1>
-      <div class="menu"><img src="img/hamburger-menu.png" alt="Hamburger Menu"></div>
+      <div class="menu"> <a href="#"><img src="img/hamburger-menu.png" alt="Hamburger Menu"></a></div>
     </header>
 
-    <ul class="calendar">
 
-          <!-- Days of the Week -->
-          <li class="day sun">Sun</li>
-          <li class="day mon">Mon</li>
-          <li class="day tue">Tue</li>
-          <li class="day wed">Wed</li>
-          <li class="day thu">Thu</li>
-          <li class="day fri">Fri</li>
-          <li class="day sat">Sat</li>
+            <!-- CALENDAR -->
+    <div class="calDiv">
+      <ul class="calendar">
 
-          <!-- Numbered Days -->
-          <li class="day">1</li>
-          <li class="day">2</li>
-          <li class="day">3</li>
-          <li class="day">4</li>
-          <li class="day">5</li>
-          <li class="day">6</li>
-          <li class="day">7</li>
-          <li class="day">8</li>
-          <li class="day">9</li>
-          <li class="day">10</li>
-          <li class="day">11</li>
-          <li class="day">12</li>
-          <li class="day">13</li>
-          <li class="day">14</li>
-          <li class="day">15</li>
-          <li class="day">16</li>
-          <li class="day">17</li>
-          <li class="day">18</li>
-          <li class="day">19</li>
-          <li class="day">20</li>
-          <li class="day">21</li>
-          <li class="day">22</li>
-          <li class="day">23</li>
-          <li class="day">24</li>
-          <li class="day">25</li>
-          <li class="day">26</li>
-          <li class="day">27</li>
-          <li class="day">28</li>
-          <li class="day">29</li>
-          <li class="day">30</li>
-          <li class="day">31</li>
+            <!-- Days of the Week -->
+            <li class="day sun">Sun</li>
+            <li class="day mon">Mon</li>
+            <li class="day tue">Tue</li>
+            <li class="day wed">Wed</li>
+            <li class="day thu">Thu</li>
+            <li class="day fri">Fri</li>
+            <li class="day sat">Sat</li>
 
-  </ul>
+            <!-- Numbered Days -->
+            <li class="day">1</li>
+            <li class="day">2</li>
+            <li class="day">3</li>
+            <li class="day">4</li>
+            <li class="day">5</li>
+            <li class="day">6</li>
+            <li class="day">7</li>
+            <li class="day">8</li>
+            <li class="day">9</li>
+            <li class="day">10</li>
+            <li class="day">11</li>
+            <li class="day">12</li>
+            <li class="day">13</li>
+            <li class="day">14</li>
+            <li class="day">15</li>
+            <li class="day">16</li>
+            <li class="day">17</li>
+            <li class="day">18</li>
+            <li class="day">19</li>
+            <li class="day">20</li>
+            <li class="day">21</li>
+            <li class="day">22</li>
+            <li class="day">23</li>
+            <li class="day">24</li>
+            <li class="day">25</li>
+            <li class="day">26</li>
+            <li class="day">27</li>
+            <li class="day">28</li>
+            <li class="day">29</li>
+            <li class="day">30</li>
+            <li class="day">31</li>
 
-  <div class="wrapper">
+      </ul>
+    </div>
+
+  <div class="shadowBox"></div>
+
+            <!-- Event Wrapper -->
+  <div class="eventWrapper">
+
+            <!-- Events Section -->
   <section class="events">
     <h2>Today's Events</h2>
-    <div class="event-item">
-      <h3>Early Easter Party</h3>
-      <p>1 pm  •  Bob's House</p>
-    </div>
-    <div class="event-item">
+
+    <a class="eventLink" href="#">
+      <div class="event-item">
+        <h3>Early Easter Party</h3>
+        <p>1 pm  •  Bob's House</p>
+      </div>
+    </a> 
+    <a class="eventLink" href="#">
+      <div class="event-item">
         <h3>B-Day Bash</h3>
         <p>7 pm  •  Home</p>
       </div>
+    </a>
+
   </section>
 
-
+            <!-- Add Event Button -->
   <form class="addEvent" id="addEvent">
-      <input type="submit" class="eventButton" value="+  Add Event">
+    <input type="submit" class="eventButton" value="+  Add Event">
+  </form>
 
-    </form>
 
-    
 </div>
 
 
