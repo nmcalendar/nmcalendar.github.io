@@ -1,0 +1,112 @@
+/* WRAPPER */
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/* TEXT STYLING */
+
+body { 
+    font: 1em avenir, sans-serif;
+    background-color: #F7F7F9;
+    color: #565364;
+}
+h1 {
+    font: 1.4em avenir, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+h2 {
+    font: 1.2em avenir, sans-serif;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+h3 {
+    font: 1em avenir, sans-serif;
+    color: #828282;
+    line-height: 80%;
+}
+p {
+    font: 0.9em avenir, sans-serif;
+    color: #BDBDBD;
+}
+li {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.sun, .mon, .tue, .wed, .thu, .fri, .sat {
+    font-weight: 600;
+}
+
+
+
+/* HEADER SETUP */
+
+#date-and-menu {
+    display: grid;
+    grid-template-columns: 6, 1fr;
+    grid-gap: 0px;
+    grid-auto-rows: auto;
+    padding-top: 40px;
+    background-color: #fff;
+}
+.date {
+    grid-column: 3 / 5;
+    grid-row: 1;
+}
+.menu {
+    grid-column: 6;
+    grid-row: 1;
+    text-align: center;
+    padding-top: 18px;
+}
+
+
+/* CALENDAR SETUP */
+
+.calendar {
+    display: grid;
+    grid-template-columns: [sun] 1fr [mon] 1fr [tue] 1fr [wed] 1fr [thu] 1fr [fri] 1fr [sat] 1fr [end-col];
+    grid-auto-rows: auto;
+    background-color: #fff;
+    max-width: 100%;
+    padding: 40px;
+    margin: 0;
+}
+
+
+/* EVENTS SETUP */
+
+.events {
+    padding: 20px 0 20px 0px;
+    background-color: #F7F7F9;
+}
+.event-item {
+    padding: 10px 0px 10px 20px;
+    background-color: #fff;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+
+/* BUTTON SETUP */
+
+.addEvent {
+    background-color: #F7F7F9;
+}
+.eventButton {
+    padding: 18px 0 18px 0;
+    color: #fff;
+    font: 1.2em avenir, sans-serif;
+    background-color: #7467CF;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 6px;
+}
+
+
