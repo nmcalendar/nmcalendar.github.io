@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
             box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
                         0 5px 15px 0 rgba(0,0,0,0.08);   
-    overflow: hidden;
+    border-top: 16px solid #7467CF;
 }
 
 
@@ -124,10 +124,37 @@ a {
     margin: 36px 0 48px 0;
     border-radius: 6px;
     transition: all .2s;
+    cursor: pointer;
 }
 
 .eventButton:hover {
     background-color: rgb(136, 122, 230);
 }
 
+/* EVENT FORM */
 
+#addEventForm {
+    display: block;
+}
+ .inpt {
+     display: block;
+     width: 95%;
+     padding: 16px 0 16px 16px;
+     margin-bottom: 16px;
+     font: 1em avenir, sans-serif;
+     color: #828282;
+  }
+ .evnt {
+    display: block;
+    font: 1.2em avenir, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding: 36px 0 24px 0;
+    background: #fff;
+ }
+ ::placeholder {
+    color: #BDBDBD;
+ }
+ .newEventInfo {
+     margin-top: 24px;
+ }

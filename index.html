@@ -30,7 +30,7 @@
             <li class="day sat">Sat</li>
 
             <!-- Numbered Days -->
-            <li class="day">1</li>
+            <li data-day="1" class="day">1</li>
             <li class="day">2</li>
             <li class="day">3</li>
             <li class="day">4</li>
@@ -92,10 +92,25 @@
             <!-- Add Event Button -->
   <form class="addEvent" id="addEvent">
     <input type="submit" class="eventButton" value="+  Add Event">
-  </form>
+  </form>      
+  
+  </div>
 
+              <!-- New Event Form -->
+              <form id="addEventForm" class="addEventForm" autocomplete="off">
+                  <label for="evnt" class="evnt">New Event</label>
+                  <div class="eventWrapper">
+                    <div class="newEventInfo">
+                      <input type="text" name="Event Name" id="eventName" placeholder="Event Name" class="form-component inpt">
+                      <input type="text" name="Date" id="date"  placeholder="Date" class="form-component inpt">
+                      <input type="text" name="Time" id="time" placeholder="Time" class="form-component inpt">
+                      <input type="text" name="Location" id="location" placeholder="Location" class="form-component inpt">
+                      <textarea rows="4" cols="50" name="Description" id="desc" placeholder="Description" class="form-component inpt"></textarea>
+                      <input type="submit" value="Done" class="eventButton btn">
+                    </div>
+                  </div>
+              </form>
 
-</div>
 
 
 
