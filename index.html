@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>NMCalendar</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,22 +71,18 @@
   <div class="eventWrapper">
 
             <!-- Events Section -->
-  <section class="events">
+  <section class="events" id="events">
     <h2>Today's Events</h2>
+      <div class="eventListItems" id="eventListItems">
 
-    <a class="eventLink" href="#">
-      <div class="event-item">
-        <h3>Early Easter Party</h3>
-        <p>1 pm  •  Bob's House</p>
+        <!-- <a class="eventLink" href="#">
+          <div class="event-item">
+            <h3>"title">Early Easter Party</h3>
+            <p>1 pm  •  Bob's House</p>
+          </div>
+        </a>  -->
+        
       </div>
-    </a> 
-    <a class="eventLink" href="#">
-      <div class="event-item">
-        <h3>B-Day Bash</h3>
-        <p>7 pm  •  Home</p>
-      </div>
-    </a>
-
   </section>
 
             <!-- Add Event Button -->
@@ -97,19 +93,19 @@
   </div>
 
               <!-- New Event Form -->
-              <form id="addEventForm" class="addEventForm" autocomplete="off">
-                  <label for="evnt" class="evnt">New Event</label>
-                  <div class="eventWrapper">
-                    <div class="newEventInfo">
-                      <input type="text" name="Event Name" id="eventName" placeholder="Event Name" class="form-component inpt">
-                      <input type="text" name="Date" id="date"  placeholder="Date" class="form-component inpt">
-                      <input type="text" name="Time" id="time" placeholder="Time" class="form-component inpt">
-                      <input type="text" name="Location" id="location" placeholder="Location" class="form-component inpt">
-                      <textarea rows="4" cols="50" name="Description" id="desc" placeholder="Description" class="form-component inpt"></textarea>
-                      <input type="submit" value="Done" class="eventButton btn">
-                    </div>
-                  </div>
-              </form>
+  <form id="addEventForm" class="addEventForm" autocomplete="off">
+      <label for="evnt" class="evnt">New Event</label>
+      <div class="eventWrapper">
+        <div class="newEventInfo">
+          <input type="text" name="Event Name" id="eventName" placeholder="Event Name" class="form-component inpt">
+          <input type="text" name="Date" id="date"  placeholder="Date" class="form-component inpt">
+          <input type="text" name="Time" id="time" placeholder="Time" class="form-component inpt">
+          <input type="text" name="Location" id="location" placeholder="Location" class="form-component inpt">
+          <textarea rows="4" cols="50" name="Description" id="desc" placeholder="Description" class="form-component inpt"></textarea>
+          <input type="submit" value="Done" class="eventButton btn">
+        </div>
+      </div>
+  </form>
 
 
 
