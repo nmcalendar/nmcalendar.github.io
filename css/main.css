@@ -136,7 +136,7 @@ a {
 #addEventForm {
     /* position: absolute;  */
     top: 0;
-    display: block;
+    display: block;;
     background-color: #F7F7F9;
 }
  .inpt {

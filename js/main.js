@@ -27,6 +27,8 @@ let eventList = [
 
 
 
+
+
 addEventForm.addEventListener('submit', event => {
     event.preventDefault();
   
