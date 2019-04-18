@@ -6,19 +6,15 @@ let eventList = [
         name: `Easter Extravaganza`, 
         desc: `Have fun with Bob and friends at this cool Easter Party`,
         location: `Bob's house`,
-        start: {date: {year: 2019, month: 03, day: 15},
-                time: {hour: 13, min: 0}}, 
-        end:   {date: {year: 2019, month: 03, day: 15},
-                time: {hour: 14, min: 0}}
+        date: `April 14, 2019`,
+        time: `1 pm`, 
     }, 
     { 
         name: `Easter Extravaganza`, 
         desc: `Have fun with Bob and friends at this cool Easter Party`,
         location: `Bob's house`,
-        start: {date: {year: 2019, month: 03, day: 15},
-                time: {hour: 13, min: 0}}, 
-        end:   {date: {year: 2019, month: 03, day: 15},
-                time: {hour: 14, min: 0}}
+        date: `April 14, 2019`,
+        time: `1 pm`, 
     }, 
 
 ];
@@ -27,6 +23,9 @@ let eventList = [
 
 
 
+let printAllEvents = () => {
+    eventListItems.innerHTML = eventList.map(anEvent).join(``);
+}
 
 
 addEventForm.addEventListener('submit', event => {
@@ -34,27 +33,40 @@ addEventForm.addEventListener('submit', event => {
   
     let newName = addEventForm.eventName.value;
     eventList.push( {text: newName} );
+
+    let newDesc = addEventForm.desc.value;
+    eventList.push( {text: newDesc} );
+    
+    let newTime = addEventForm.time.value;
+    eventList.push( {text: newTime} );
+
+    let newLocation = addEventForm.location.value;
+    eventList.push( {text: newLocation} );
+
+    let newDate = addEventForm.date.value;
+    eventList.push( {text: newDate} );
+
+    
+    // Reset form fields
   
     addEventForm.reset();
+
+    
+    // Print the events
   
     printAllEvents();
   
   });
   
-  
-  const anEvent = (evnt) => {
+  let anEvent = (evnt) => {
   
     return `
         <div class="event-item">
             <h3>${evnt.name}</h3>
-            <p>${evnt.start.time.hour}h  •  ${evnt.location}</p>
+            <p>${evnt.time}  •  ${evnt.location}</p>
         </div>`;
 };
 
-
-const printAllEvents = () => {
-    eventListItems.innerHTML = eventList.map(anEvent).join(``);
-}
 
 printAllEvents();
 
