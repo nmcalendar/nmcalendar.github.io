@@ -23,28 +23,31 @@ let eventList = [
 
 
 
-let printAllEvents = () => {
-    eventListItems.innerHTML = eventList.map(anEvent).join(``);
-}
+
 
 
 addEventForm.addEventListener('submit', event => {
     event.preventDefault();
   
     let newName = addEventForm.eventName.value;
-    eventList.push( {text: newName} );
-
-    let newDesc = addEventForm.desc.value;
-    eventList.push( {text: newDesc} );
-    
     let newTime = addEventForm.time.value;
-    eventList.push( {text: newTime} );
-
     let newLocation = addEventForm.location.value;
-    eventList.push( {text: newLocation} );
+    eventList.push( {name: newName, time: newTime, location: newLocation} );
 
-    let newDate = addEventForm.date.value;
-    eventList.push( {text: newDate} );
+
+
+
+    // let newDesc = addEventForm.desc.value;
+    // eventList.push( {text: newDesc} );
+    
+    // let newTime = addEventForm.time.value;
+    // eventList.push( {text: newTime} );
+
+    // let newLocation = addEventForm.location.value;
+    // eventList.push( {text: newLocation} );
+
+    // let newDate = addEventForm.date.value;
+    // eventList.push( {text: newDate} );
 
     
     // Reset form fields
@@ -65,7 +68,11 @@ addEventForm.addEventListener('submit', event => {
             <h3>${evnt.name}</h3>
             <p>${evnt.time}  •  ${evnt.location}</p>
         </div>`;
-};
+}
+
+let printAllEvents = () => {
+    eventListItems.innerHTML = eventList.map(anEvent).join(``);
+}
 
 
 printAllEvents();
